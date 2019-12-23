@@ -16,14 +16,17 @@ var ArticleSchema = new Schema({
     type: String,
     required: true
   },
-  // `note` is an object that stores a Note id
+  // `comment` is an object that stores a Comment id
   // The ref property links the ObjectId to the summary model
-  // This allows us to populate the Article with an associated Note
-  summary: {
-    type: Schema.Types.ObjectId,
-    ref: "Summary"
-  }
-});
+  // This allows us to populate the Article with an associated comment
+  //summary: {
+    // type: Schema.Types.ObjectId,
+    // ref: "Summary"
+    comment: [{
+      type: Schema.Types.ObjectId,
+      ref: "Comment"
+    }]
+  });
 
 // This creates our model from the above schema, using mongoose's model method
 var Article = mongoose.model("Article", ArticleSchema);
