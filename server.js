@@ -35,7 +35,7 @@ var collections = ["nprScrapeData"];
 require("./routes/apiRoutes")(app);
 //require("./routes/htmlRoutes")(app);
 
-var MONGODB_URI = process.env.MONGODB_URI || "mongodb://<user>:<password1>@ds347298.mlab.com:47298/heroku_k935zqtq";
+var MONGODB_URI = process.env.MONGODB_URI || "mongodb://user:password1@ds347298.mlab.com:47298/heroku_k935zqtq";
 mongoose.connect(MONGODB_URI)
 
 
