@@ -1,30 +1,13 @@
 # NewsScrape
-HW Mongo
 
-## Instructions
+PURPOSE: This app is created to scrape all the latest USA News on the website.
 
-* Create an app that accomplishes the following:
+OVERVIEW: We have used Node JS, Express JS, handlebars, mongoDB, cheerio and axios. We have created handlebars as a webpage and on different button clicks we are calling different GET and POST ajax functions to scrape data to the web page. We have also included an option to comment on a particular article. Users can view all the comments and delete the comments too if they want. We have used axios to pull the latest news headlines, summary and link to the every news page.
 
-  1. Whenever a user visits your site, the app should scrape stories from a news outlet of your choice and display them for the user. Each scraped article should be saved to your application database. At a minimum, the app should scrape and display the following information for each article:
+HOW TO USE: User will navigate to the app and click the button 'scrape new articles'. It will pull all the latest news. Users are also able to see old news on the app and read, post and delete comments by clicking the comment button right next to each article. Users can also view the full news by clicking on the link provided with every news.
 
-     * Headline - the title of the article
 
-     * Summary - a short summary of the article
 
-     * URL - the url to the original article
+TECHNOLOGIES USED: Node JS, Express JS, Handlebars, MongoDB, Cheerio, Axios.
 
-     * Feel free to add more content to your database (photos, bylines, and so on).
-
-  2. Users should also be able to leave comments on the articles displayed and revisit them later. The comments should be saved to the database as well and associated with their articles. Users should also be able to delete comments left on articles. All stored comments should be visible to every user.
-
-* Beyond these requirements, be creative and have fun with this!
-
-### Tips
-
-* Go back to Saturday's activities if you need a refresher on how to partner one model with another.
-
-* Whenever you scrape a site for stories, make sure an article isn't already represented in your database before saving it; Do not save any duplicate entries.
-
-* Don't just clear out your database and populate it with scraped articles whenever a user accesses your site.
-
-  * If your app deletes stories every time someone visits, your users won't be able to see any comments except the ones that they post.
+MY ROLE: This app is solely developed by me from start to end.
